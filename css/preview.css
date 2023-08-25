@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .preview-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--textw);
+    
+     
+} */
+.preview{
+    width: 90%;
+    display: none;
+     justify-content:space-between;
+     
+     margin-top: 10px 0;
+     position: fixed;
+     top: 12%;
+     height: 100%;
+      
+     
+
+     
+    
+}
+/* .active-product{
+    display: flex;
+     
+} */
+.preview-img{
+    width: 650px;
+    /* width: 40%; */
+    height: 650px;
+    border-radius: 10px;
+    display: flex;
+    
+    
+}
+.preview-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
+    border-radius: 10px;
+}
+
+.text-preview{
+    font-size: 20px;
+    width: 50%;
+    padding: 1rem 5px;
+
+}
+.product-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.prise{
+    font-size: 25px;
+    margin: 10px 0;
+}
+ .paragraf{
+    margin: 10px 0;
+    font-size: 20px;
+    color:grey;
+ }
+ .btn1{
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    background-color: #00b4d8;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .star{
+    display: inline-block;
+    margin: 10px 0;
+ }
+
+.off-page{
+    display: none;
+}
+
+ 
+ @media(min-width:1000px){
+
+
+    .preview-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--textw);
+    z-index: 99;
+    flex-wrap: wrap;
+    
+     
+}
+.active-product{
+    display: flex;
+     
+}
+
+
+     .btn1:hover{
+         transition: 0.3s ease-in-out;
+         background-color: #ff70a6;
+        }
+
+
+
+         .off-page{
+            display: block;
+            color: #0d1011;
+            font-size: 2rem;
+            position: absolute;
+            top: 12%;
+            right: 10px;
+            cursor: pointer;
+        }
+        .off-page:active{
+            color: #ff70a6;
+            transition: 0.1s ease;
+        }
+ }
+
+
+
+
+ /* 1000px  */
+
+ /* @media (max-width:1000px){
+    .preview-container{
+        
+        
+        padding: 1rem 0;
+    }
+    .preview{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+         
+         justify-content: center;
+         padding: 1rem 0;
+        
+    }
+    .preview-img{
+        width:450px;
+        height: 450px;
+        margin: 1rem 0;
+         
+    }
+    .preview-img img{
+        height: 100%;
+    }
+
+    .text-preview{
+        width: 90%;
+        margin: 1rem auto;
+         padding: 1rem 0;
+        
+    }
+ } */

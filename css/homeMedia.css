@@ -1,0 +1,109 @@
+/* 1000px media query  */
+
+@media (max-width:1000px){
+    *{
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 15px 1rem;
+    }
+
+    /* logo  */
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    /* menu  */
+    .menu{
+        position: absolute;
+         
+        top: 100%;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: #08bdbd;
+        flex-direction: column;
+        padding: 1rem 0;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+        
+    }
+    .menu-left{
+        left: 0;
+        display: block;
+    }
+    .menu-list{
+        padding: 1rem 0;
+    }
+    .menu-list a{
+        font-size:22px;
+    }
+    /* humber  */
+    .humber{
+        display: block !important;
+    }
+    /* close menu  */
+    .close-menu{
+        display: block !important;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        transition: 0.2s ease-in;
+    }
+    .close-menu:active{
+        color: black;
+        rotate: 90deg;
+    }
+/* slide image  */
+
+.text-slide{
+    width: 70%;
+}
+
+
+/* card  */
+.add-buy{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* .about company  */
+.about-company{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+}
+
+
+
+
+
+@media(max-width:400px){
+    .menu{
+        width: 100%;
+    }
+.container-cart{
+    width: 100%;
+}
+ .text-slide{
+    width: 90%;
+    top: 10%;
+ }
+ .Serch{
+    width: 100%;
+ }
+ .footer-c{
+    flex-direction: column;
+ }
+
+}
