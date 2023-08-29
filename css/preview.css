@@ -135,6 +135,7 @@
     top: 10%;
     right: 5%;
     cursor: pointer;
+    z-index: 99;
 }
 .off-page:active{
     color: #ff70a6;
@@ -192,6 +193,17 @@
 
  @media(max-width:400px){
     .preview-img{
-        width: 100%;
+        width: 90%;
+        height: 250px;
+    }
+    .text-preview p{
+        padding: 0;
+    }
+    .text-preview{
+        margin: 0;
+    }
+    .off-page{
+        top: 12%;
+        right: 4%;
     }
  }
